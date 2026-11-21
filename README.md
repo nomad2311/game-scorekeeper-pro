@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Bank & Score!
 
-# Run and deploy your AI Studio app
+The ultimate companion app for Farkle, Yahtzee, Dominoes, Spades, and Euchre — featuring instant score banking, automatic calculations, saved matches, Android TV D-Pad remote support, and detailed player stats.
 
-This contains everything you need to run your app locally.
+Live site: https://bankandscore.vercel.app
 
-View your app in AI Studio: https://ai.studio/apps/18eb10ab-d73c-4965-9b45-871ad7a92ac1
+## Games
 
-## Run Locally
+- Farkle — plays to 10,000 points, with dynamic roll builders and automated combination scoring
+- Yahtzee — interactive 13-category scorecard with subtotal markers, bonus triggers, and extra-Yahtzee credits
+- Dominoes — fast log lists with quick adder pads
+- Spades — bids, Nil & Blind Nil, overtrick bags, and 10-bag penalties; 2v2 Partnership or Cutthroat
+- Euchre — Trump & Bower tracker, Going Alone sweeps, Euchre penalties, and 3-player Cutthroat mode
 
-**Prerequisites:**  Node.js
+## Run locally
 
+Prerequisites: Node.js
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Install dependencies: `npm install`
+2. Run the app: `npm run dev`
+
+Voice commands use a Gemini API key when `GEMINI_API_KEY` is set; without it the app falls back to its built-in local voice rules.
+
+## Deploy
+
+Deployed on Vercel as project BankandScore. Build command: `vite build`. Output directory: `dist`.
+
+## Tech
+
+React 19, Vite, TypeScript, Tailwind CSS, Firebase (Auth + Firestore).
